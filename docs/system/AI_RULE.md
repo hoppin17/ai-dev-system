@@ -1,4 +1,4 @@
-# AI_RULES.md
+# AI_RULE.md
 
 ## 목적
 
@@ -196,7 +196,7 @@ AI 사용 방식은 지속적으로 개선한다.
 
 필요한 경우 다음을 업데이트한다.
 
-* AI_RULES.md
+* AI_RULE.md
 * Workflow
 * Prompt templates
 * Handoff format
