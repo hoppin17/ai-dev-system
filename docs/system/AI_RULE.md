@@ -57,17 +57,18 @@ AI는 최종 의사결정자가 아니다. 결정은 항상 사용자가 한다.
 
 ### 5.2 docs/workflow
 
-`docs/workflow/` 문서는 실제 작업 흐름과 상태를 관리한다.
+`docs/workflow/` 문서는 실제 프로젝트에서 복사해 사용할 작업 문서 템플릿을 관리한다.
 
 여기에 적는 내용:
 
-* `PROJECT_CONTEXT.md`
-* `ARCHITECTURE.md`
-* `CURRENT_TASK.md`
-* `NEXT_TASK.md`
-* `DECISION_LOG.md`
+* `PROJECT_CONTEXT.template.md`
+* `ARCHITECTURE.template.md`
+* `CURRENT_TASK.template.md`
+* `NEXT_TASK.template.md`
+* `DECISION_LOG.template.md`
+* `SERVICE_OVERVIEW.template.md`
 
-즉, 실제 진행 상태와 작업 기준은 `docs/workflow/` 문서가 담당한다.
+즉, 실제 진행 상태와 작업 기준은 이 템플릿을 복사한 프로젝트별 workflow 문서가 담당한다.
 
 ### 5.3 docs/agents
 
@@ -95,7 +96,7 @@ Codex는 작업 시작 전에 아래 문서를 우선 확인한다.
 
 ## 7. CURRENT_TASK / NEXT_TASK 사용 규칙
 
-`CURRENT_TASK.md`는 지금 해야 하는 작업만 관리한다.
+`CURRENT_TASK.template.md`는 지금 해야 하는 작업을 정리할 때 사용하는 템플릿이다.
 
 여기에 적는 내용:
 
@@ -104,7 +105,7 @@ Codex는 작업 시작 전에 아래 문서를 우선 확인한다.
 * 검증 기준
 * 이번 작업에서 제외할 항목
 
-`NEXT_TASK.md`는 이번 작업 이후의 다음 단계를 관리한다.
+`NEXT_TASK.template.md`는 이번 작업 이후의 다음 단계를 정리할 때 사용하는 템플릿이다.
 
 여기에 적는 내용:
 
@@ -112,7 +113,7 @@ Codex는 작업 시작 전에 아래 문서를 우선 확인한다.
 * 다음 검증 항목
 * 보류된 작업
 
-즉, `CURRENT_TASK`는 현재 실행 기준이고, `NEXT_TASK`는 다음 실행 기준이다.
+즉, `CURRENT_TASK`는 현재 실행 기준 템플릿이고, `NEXT_TASK`는 다음 실행 기준 템플릿이다.
 
 ---
 
@@ -133,9 +134,9 @@ Codex는 작업 시작 전에 아래 문서를 우선 확인한다.
 
 작업이 끝나면 아래 순서로 문서를 갱신한다.
 
-1. `docs/workflow/CURRENT_TASK.md` 반영
-2. 필요 시 `docs/workflow/DECISION_LOG.md` 반영
-3. `docs/workflow/NEXT_TASK.md` 정리
+1. 실제 프로젝트의 `CURRENT_TASK` 문서 반영
+2. 필요 시 실제 프로젝트의 `DECISION_LOG` 문서 반영
+3. 실제 프로젝트의 `NEXT_TASK` 문서 정리
 4. 작업 방식이 바뀌면 `docs/system/AI_RULE.md` 또는 `docs/system/AI_PROMPTS.md` 반영
 5. 사용자에게 공유할 변경 요약이 필요하면 `CHANGELOG.md`에 기록
 
@@ -174,7 +175,7 @@ AI에 그대로 남기지 않는 정보:
 
 * `docs/system/AI_RULE.md`
 * `docs/system/AI_PROMPTS.md`
-* `docs/workflow/PROJECT_CONTEXT.md`
-* `docs/workflow/ARCHITECTURE.md`
-* `docs/workflow/DECISION_LOG.md`
+* `docs/workflow/PROJECT_CONTEXT.template.md`
+* `docs/workflow/ARCHITECTURE.template.md`
+* `docs/workflow/DECISION_LOG.template.md`
 * `CHANGELOG.md`

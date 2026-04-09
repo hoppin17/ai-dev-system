@@ -13,8 +13,8 @@
 
 - 개발 규칙 (Rules)
 - 표준 프롬프트 (Prompts)
-- 작업 관리 템플릿 (Tasks)
-- 설계 문서 구조 (Architecture)
+- 작업 관리 템플릿 (Workflow Templates)
+- 설계 문서 템플릿 (Architecture Template)
 - 의사결정 기록 (Decision Log)
 
 ---
@@ -64,11 +64,12 @@ AI는 결정을 대신하는 존재가 아니라,
     AI_RULE.md
     AI_PROMPTS.md
   /workflow
-    PROJECT_CONTEXT.md
-    ARCHITECTURE.md
-    CURRENT_TASK.md
-    NEXT_TASK.md
-    DECISION_LOG.md
+    PROJECT_CONTEXT.template.md
+    ARCHITECTURE.template.md
+    CURRENT_TASK.template.md
+    NEXT_TASK.template.md
+    DECISION_LOG.template.md
+    SERVICE_OVERVIEW.template.md
   /agents
     AGENTS_KR.md
     AGENTS_EN.md
@@ -97,50 +98,58 @@ AI와 협업할 때의 기본 규칙 정의
 
 ---
 
-### 🔹 docs/workflow/PROJECT_CONTEXT.md
-현재 프로젝트 상태와 방향 정의
+### 🔹 docs/workflow/PROJECT_CONTEXT.template.md
+프로젝트의 전체 맥락을 정리하는 템플릿
 
 👉 "지금 어디까지 왔는가"
 
 ---
 
-### 🔹 docs/workflow/ARCHITECTURE.md
-시스템 구조 설계 문서
+### 🔹 docs/workflow/ARCHITECTURE.template.md
+시스템 구조를 정리하는 템플릿
 
 👉 "어떻게 구성되어 있는가"
 
 ---
 
-### 🔹 docs/workflow/CURRENT_TASK.md
-현재 작업 명세
+### 🔹 docs/workflow/CURRENT_TASK.template.md
+현재 작업 명세를 작성하기 위한 템플릿
 
 👉 "지금 무엇을 해야 하는가"
 
 ---
 
-### 🔹 docs/workflow/NEXT_TASK.md
-다음 작업 방향
+### 🔹 docs/workflow/NEXT_TASK.template.md
+다음 작업 후보를 정리하는 템플릿
 
 👉 "다음에는 무엇을 할 것인가"
 
 ---
 
-### 🔹 docs/workflow/DECISION_LOG.md
-의사결정 기록
+### 🔹 docs/workflow/DECISION_LOG.template.md
+의사결정을 기록하기 위한 템플릿
 
 👉 "왜 이렇게 만들었는가"
 
 ---
 
+### 🔹 docs/workflow/SERVICE_OVERVIEW.template.md
+서비스를 빠르게 설명하기 위한 개요 템플릿
+
+👉 "이 서비스가 무엇을 제공하는가"
+
+---
+
 ## ⚙️ Workflow
 
-1️⃣ PROJECT_CONTEXT 확인  
-2️⃣ ARCHITECTURE 확인  
-3️⃣ CURRENT_TASK 작성  
-4️⃣ 구현  
-5️⃣ 리뷰  
-6️⃣ DECISION_LOG 기록  
-7️⃣ NEXT_TASK 정의  
+1️⃣ 필요한 템플릿 선택  
+2️⃣ 템플릿을 복사해 실제 프로젝트 문서로 사용  
+3️⃣ PROJECT_CONTEXT 작성  
+4️⃣ ARCHITECTURE 작성  
+5️⃣ CURRENT_TASK 작성  
+6️⃣ 구현  
+7️⃣ DECISION_LOG 기록  
+8️⃣ NEXT_TASK 정리
 
 ---
 
@@ -181,8 +190,9 @@ AI와 협업할 때의 기본 규칙 정의
 
 1. 이 레포를 clone
 2. 새로운 프로젝트에 `/docs` 구조 복사
-3. `docs/workflow/PROJECT_CONTEXT.md`부터 작성
-4. `docs/workflow/CURRENT_TASK.md` 기준으로 작업 진행
+3. `docs/workflow/*.template.md` 파일을 프로젝트에 맞게 복사
+4. 복사한 문서를 실제 작업 문서 이름으로 바꿔 사용
+5. `PROJECT_CONTEXT`부터 작성하고 `CURRENT_TASK` 기준으로 작업 진행
 
 ---
 

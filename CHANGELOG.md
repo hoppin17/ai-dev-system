@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-04-09
+
+### Template document naming update
+
+* 워크플로 문서들을 실사용 문서가 아닌 템플릿 문서로 명확히 구분하기 위해 `*.template.md` 형식으로 이름을 정리했다.
+* `CURRENT_TASK`, `NEXT_TASK`, `PROJECT_CONTEXT`, `ARCHITECTURE`, `DECISION_LOG` 문서를 템플릿 기준으로 통일하고, `SERVICE_OVERVIEW.template.md`를 새로 추가했다.
+* 일부 템플릿 문서 상단에는 이 문서가 언제, 어떻게 쓰이는지 빠르게 이해할 수 있도록 간단한 사용 안내를 덧붙였다.
+* 관련 문서 참조가 깨지지 않도록 `README.md`의 구조 설명과 사용 방법도 새 파일명 기준에 맞게 함께 수정했다.
+
 ## 2026-04-07
 
 ### AI rule update
